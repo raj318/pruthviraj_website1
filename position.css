@@ -1,0 +1,28 @@
+div {
+	height: 60px;
+}
+body {
+	height: 200vh;
+}
+
+.parent {
+	background-color: blue;
+	padding: 5px;
+	height: 200px;
+}
+
+.child1 {
+	background-color: green;
+	position: sticky;
+	top: 0;
+	right: 0;
+}
+
+.child2 {
+	background-color: orange;
+}
+
+.child3 {
+	background-color: pink;
+	
+}
