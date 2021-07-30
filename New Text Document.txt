@@ -1,0 +1,60 @@
+body {
+	margin: 0;
+	background-color: black;
+}
+
+.header {
+	color: black;
+	text-align: center;
+	background-color: skyblue;
+	border-radius: 5px;
+}
+
+.header > h1 {
+	margin: 0;
+}
+
+.links {
+	display:inline-block;
+	padding: 5px;
+	width: 150px;
+	height: 400px;
+	color: white;
+	background-color: skyblue;
+	border-radius: 5px;
+	margin-left: 40px;
+}
+
+
+.links > div {
+	
+	font-size: 30px;
+	margin-top: 28px;
+	margin-left: 5px;
+	width: 100px;
+	text-align: center;
+	padding: 20px;
+}
+
+.links > div:hover {
+	background-color: black;
+	border-radius: 5px;
+}
+
+.content {
+	display: inline-block;
+	color: white;
+	padding: 10px;
+	margin-top: 100px;
+	width: 70%;
+	
+}
+
+.content > div {
+	background-color: skyblue;
+	border-radius: 5px;
+	padding: 10px;
+	margin: 30px;
+}
+
+
