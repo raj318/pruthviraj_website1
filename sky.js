@@ -67,14 +67,14 @@ function star(x, y, radius){
 			this.draw();
 		}
 		if (mouse.x < center.x){
-			this.x -= 0.1;
+			this.x -= 0.2;
 		}else{
-			this.x += 0.1;
+			this.x += 0.2;
 		}
 		if (mouse.y < center.y){
-			this.y -= 0.1;
+			this.y -= 0.2;
 		}else {
-			this.y +=0.1;
+			this.y +=0.2;
 		}
 		
 		
