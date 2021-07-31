@@ -15,7 +15,7 @@ var c = canvas.getContext('2d');
 
 var stararray = [];
 
-for (var i=0;i<500;i++){
+for (var i=0;i<400;i++){
 	var x=Math.random() * window.innerWidth; 
 	var y=Math.random() * window.innerHeight;
 	var r=(Math.random() * 1) + 1;
@@ -45,8 +45,8 @@ function star(x, y, radius){
 		c.stroke(); 
 	}
 	this.update = function(bright, plane) {
-		if (mouse.x - this.x < 50 && mouse.x - this.x > -50
-			&& mouse.y - this.y < 50 && mouse.y - this.y > -50){
+		if (mouse.x - this.x < 30 && mouse.x - this.x > -30
+			&& mouse.y - this.y < 30 && mouse.y - this.y > -30){
 			if (this.radius<3){
 				this.radius += 0.2;
 			}
@@ -67,27 +67,29 @@ function star(x, y, radius){
 			this.draw();
 		}
 		if (mouse.x < center.x){
-			this.x += 0.1;
-		}else{
 			this.x -= 0.1;
+		}else{
+			this.x += 0.1;
 		}
 		if (mouse.y < center.y){
-			this.y += 0.1;
+			this.y -= 0.1;
 		}else {
-			this.y -=0.1;
+			this.y +=0.1;
 		}
 		
-		this.y += 1;
 		
-		if (this.x <0){
-			this.x = Math.random()+ innerWidth;
-		}else if (this.x > innerWidth){
-			this.x = 1
+		
+		if (this.x <=1){
+			this.x = Math.random()+ innerWidth-1;
 		}
-		if (this.y <0){
-			this.y = Math.random()+ innerHeight;
-		}else if (this.y > innerHeight){
-			this.y = 1
+		if (this.x >= innerWidth){
+			this.x = Math.random()+ 1
+		}
+		if (this.y <=1){
+			this.y = Math.random()+ innerHeight-1;
+		}
+		if (this.y >= innerHeight){
+			this.y = Math.random()+1
 		}
 	}
 }
