@@ -3,6 +3,12 @@ var canvas = document.querySelector('canvas');
 canvas.width = window.innerWidth-5;
 canvas.height = window.innerHeight-5;
 
+var center = {
+	x: window.innerWidth/2,
+	y: window.innerHeight/2
+}
+center.x = window.innerWidth/2;
+center.y = window.innerHeight/2;
 
 var c = canvas.getContext('2d');
 
@@ -12,7 +18,7 @@ var stararray = [];
 for (var i=0;i<500;i++){
 	var x=Math.random() * window.innerWidth; 
 	var y=Math.random() * window.innerHeight;
-	var r=(Math.random() * 2) +1;
+	var r=(Math.random() * 1) + 1;
 	if (r < 0){
 		i -= 1;
 	}
@@ -38,25 +44,58 @@ function star(x, y, radius){
 		c.fill();
 		c.stroke(); 
 	}
-	this.update = function() {
+	this.update = function(bright, plane) {
 		if (mouse.x - this.x < 50 && mouse.x - this.x > -50
 			&& mouse.y - this.y < 50 && mouse.y - this.y > -50){
 			if (this.radius<3){
-				this.radius += 2;
+				this.radius += 0.2;
 			}
 		}else{
 			if (this.radius > radius && this.radius > 0){
-				this.radius -= 1;
+				this.radius -= 0.2;
 			}
 		}
-		this.draw();
+		if (bright == 1){
+			var random_star = Math.floor(Math.random() * 100) ;
+		
+			if (random_star > 30 && random_star < 32){
+				this.radius += 1;
+				this.draw();
+				this.radius -= 1;
+			}
+		}else{
+			this.draw();
+		}
+		if (mouse.x < center.x){
+			this.x += 0.1;
+		}else{
+			this.x -= 0.1;
+		}
+		if (mouse.y < center.y){
+			this.y += 0.1;
+		}else {
+			this.y -=0.1;
+		}
+		
+		this.y += 1;
+		
+		if (this.x <0){
+			this.x = Math.random()+ innerWidth;
+		}else if (this.x > innerWidth){
+			this.x = 1
+		}
+		if (this.y <0){
+			this.y = Math.random()+ innerHeight;
+		}else if (this.y > innerHeight){
+			this.y = 1
+		}
 	}
 }
 
 window.addEventListener('mousemove', function(event) {
-		console.log(mouse.x, mouse.y);
 		mouse.x = event.x;
 		mouse.y = event.y;
+		
 	})
 
 function skyanimate(){
@@ -66,8 +105,13 @@ function skyanimate(){
 	var r=Math.random() * 5;
 	c.clearRect(0, 0, window.innerWidth, innerHeight);
 	
-	for (var i = 0;i< stararray.length;i++){
-		stararray[i].update();
+	for (var i=0;i<stararray.length;i++){
+		var random_glow = Math.floor(Math.random() * 100) ;
+		if (random_glow > 30 && random_glow < 35){
+			stararray[i].update(1);
+		}else {
+			stararray[i].update(0);
+		}
 	}
 }
 
