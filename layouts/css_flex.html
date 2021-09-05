@@ -1,0 +1,55 @@
+<html>
+
+<head>
+<title>css flex layout</title>
+<meta charset='UTF-8'>
+<meta name='description' content='practicing a simple web page'>
+<meta name='author' content='Pruthvi'>
+
+<style>
+body {
+    margin: 0;
+}
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: lightgreen;
+}
+.item{
+    margin: 10px;
+    height: 200px;
+    background-color: navajowhite;
+}
+
+
+
+
+
+.item1 {
+    flex: 1 1 0;
+    order: 2;
+}
+
+.item2 {
+    order: 1;
+    flex: 3 1 0;
+}
+
+</style>
+</head>
+<body>
+<div class="container one">
+    <div class="item item1">This is test i like to try out!</div>
+    
+    <div class="item item2">This is test</div>
+    <div class="item">This is test</div>
+</div>
+
+<div class="container two">
+    <div class="item item1">This is test i would like to try out here too!</div>
+    
+    <div class="item item1">This is test</div>
+    <div class="item">This is test</div>
+</div>
+</body>
+</html>
