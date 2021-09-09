@@ -1,0 +1,55 @@
+<html>
+
+<head>
+<title>grid layout</title>
+<meta charset='UTF-8'>
+<meta name='description' content='practicing a simple web page'>
+<meta name='author' content='Pruthvi'>
+<style>
+body {
+    margin: 0;
+}
+.content {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    grid-template-rows: repeat(12, minmax(0, 1fr));
+    gap: 5px;
+    margin: 5px;
+    border: 5px solid black;
+}
+
+.section {
+    background-color: chocolate;
+
+}
+
+.body {
+    grid-column: 2 / 13;
+    grid-row: 2 / 12;
+}
+
+.grid-item {
+    background-color: chocolate;
+    grid-column: 1 / 13;
+    grid-row: 12 / 13;
+}
+
+.nav {
+    grid-row: 2 / 12;
+}
+
+.header {
+    grid-column: 1 / 13;
+}
+
+</style>
+</head>
+<body>
+<div class="content">
+<div class="header section"> header section </div>
+<div class="nav section"> navigation </div>
+<div class="body section"> body section</div>
+<div class="grid-item section"> footer section </div>
+</div>
+</body>
+</html>

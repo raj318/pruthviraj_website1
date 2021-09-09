@@ -1,0 +1,45 @@
+<html>
+
+<head>
+<title>css selectors</title>
+<meta charset='UTF-8'>
+<meta name='description' content='practicing a simple web page'>
+<meta name='author' content='Pruthvi'>
+<link rel="stylesheet" href="home.css">
+</head>
+<body>
+<div class='myclass' >
+    selector itself, element/class/id 
+    <p>this is test we can select this from parent container class</p>
+    <p>inside brackets is declarations!</p>
+    <p>declarations have two item 1. is property! like float, display etcc
+        2. right side is called value
+        we can also hear as property value pair normally comes in programming languages
+    </p>
+    <h1>testingiii</h1>
+    <h2>testing3333</h2>
+    <h3>testing5555</h3>
+
+    <h4 id='test' class='myclass'>There is something called compound selectors!</h4>
+    <p id="tt">Where i can select one element under a class by adding that element before 
+        class
+        ex: p.myclass { backgroun-color: white;}
+    </p>
+</div>
+<p>This is the only direct decended for body</p>
+<div>
+<section>
+<p> to get direct elements we select > </p>
+</section>
+<p> This is testing </p>
+<aside>
+<p>for general (shares parent but not necessarly next to each other)
+    sibilings we need to use +</p>
+<p>to select adjacent sibiling we need to use ~ any where in document</p>
+<p>as in h ~ p any paragram adjucent to header will be picked</p>
+<h3>both + and ~ elements will only picked are after sibiling selected not before</h3>
+</aside>
+
+</div>
+</body>
+</html>
