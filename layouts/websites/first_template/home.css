@@ -1,0 +1,101 @@
+
+body {
+    margin: 0px;
+}
+
+.content {
+    width: 100%;
+    margin: auto;
+    margin-right: 0px;
+    background-color: black;
+    color: white;
+    height: 200vh;
+}
+
+.intro {
+    width: 550px;
+    display: inline-block;
+    position: absolute;
+    height: 40vh;
+    right: 200px;
+    top: 30%;
+    font-size: 18px;
+}
+
+.exp {
+    display: inline-block;
+    position: absolute;
+    height: 50vh;
+    right: 20px;
+    top: 125%;
+}
+
+.techs li:nth-child(5), .techs li:nth-child(6) {
+    position: relative;
+    top: 0;
+}
+
+.techs {
+    height: 100px;
+    width: 200px;
+}
+
+.slist {
+    position: absolute;
+    right: 200px;
+    bottom: -50px;
+}
+
+.left {
+    background-color: white;
+    z-index: 5;
+    width: 42%;
+    height: 200vh;
+    position: absolute;
+    top: 0;
+}
+
+.name {
+    position: sticky;
+    top: 40%;
+    font-size: 80px;
+    width: 250px;
+    margin-left: 25px;
+}
+
+.chead {
+    font-size: 37px;
+    padding-left: 20px;
+}
+
+.time {
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.ebod {
+    position: absolute;
+    width: 550px;
+    height: 40vh;
+    right: 200px;
+    font-size: 18px;
+}
+
+.ebod li {
+    padding: 5px;
+}
+
+.companies > div {
+    margin-right: 55px;
+    display: inline;
+    font-size: 25px;
+    padding: 5px;
+    font-size: 20px;
+    background-color: white;
+    color: black;
+}
+
+.companies {
+    padding-bottom: 55px;
+    padding-left: 20px;
+}
