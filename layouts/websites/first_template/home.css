@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:wght@700&display=swap');
 
 body {
     margin: 0px;
+    
 }
 
 .content {
@@ -19,7 +21,7 @@ body {
     height: 40vh;
     right: 200px;
     top: 30%;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .exp {
@@ -32,7 +34,7 @@ body {
 
 .techs li:nth-child(5), .techs li:nth-child(6) {
     position: relative;
-    top: 0;
+    top: 100px;
 }
 
 .techs {
@@ -43,24 +45,28 @@ body {
 .slist {
     position: absolute;
     right: 200px;
-    bottom: -50px;
+    bottom: -10px;
 }
 
 .left {
     background-color: white;
-    z-index: 5;
+    z-index: 1;
     width: 42%;
     height: 200vh;
     position: absolute;
     top: 0;
+    color: black;
 }
 
 .name {
+    font-family: 'Montagu Slab', serif, sans-serif;
     position: sticky;
     top: 40%;
+    left: 60px;
     font-size: 80px;
     width: 250px;
     margin-left: 25px;
+    font-weight: 900;
 }
 
 .chead {
@@ -85,8 +91,8 @@ body {
     padding: 5px;
 }
 
-.companies > div {
-    margin-right: 55px;
+.companies div {
+    
     display: inline;
     font-size: 25px;
     padding: 5px;
@@ -94,13 +100,178 @@ body {
     color: white;
 }
 
-.companies > div:hover {
+.companies > .compitem1:hover {
     background-color: white;
     color: black;
 }
 
+.companies > .compitem2:hover {
+    background-color: white;
+    color: black;
+}
+
+.companies > .compitem3:hover {
+    background-color: white;
+    color: black;
+}
 
 .companies {
     padding-bottom: 55px;
     padding-left: 20px;
+}
+
+.bars > div {
+    display: inline-block;
+    padding: 0px;
+    margin-bottom: -5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.bars {
+    display: inline-block;
+    padding: 0px;
+}
+
+.outer{
+    background-color: white;
+    width: 5px;
+    height: 25px;
+}
+
+.middle {
+    background-color: white;
+    width: 3px;
+    height: 25px;
+}
+
+.center {
+    background-color: white;
+    width: 1px;
+    height: 25px;
+}
+
+.divider {
+    width: 70px;
+    height: 200vh;
+    background-color: white;
+    position: absolute;
+    z-index: 2;
+    right:60%;
+}
+
+.aboutme {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.heading {
+    margin-left: 10px;
+    text-align: center;
+    width: 200px;
+    height: 185px;
+    color: black;
+    transform: rotate(-90deg);
+    font-size: 30px;
+}
+
+.exper {
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+    text-align: center;
+    width: 200px;
+    height: 210px;
+    color: black;
+    transform: rotate(-90deg);
+    font-size: 30px;
+}
+
+.topbars {
+    display: inline-block;
+    background-color: white;
+    width: 100%;
+    height: 35vh;
+}
+
+.bottombars {
+    display: inline-block;
+    background-color: white;
+    width: 100%;
+    height: 35vh;
+}
+
+.topbars > div {
+    position: relative;
+    display: inline-block;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color:black;
+}
+
+.bottombars > div {
+    position: relative;
+    display: inline-block;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color:black;
+}
+
+.one {
+    height: 10px;
+    left: 10%;
+}
+.two {
+    height: 9px;
+    left: 10%;
+}
+.three {
+    height: 8px;
+    left: 10%;
+}
+.four {
+    height: 7px;
+    left: 10%;
+}
+.five {
+    height: 6px;
+    left: 10%;
+}
+.six {
+    height: 5px;
+    left: 10%;
+}
+.seven {
+    height: 4px;
+    left: 10%;
+}
+.eight {
+    height: 3px;
+    left: 10%;
+}
+.nine {
+    height: 2px;
+    left: 10%;
+}
+.ten {
+    height: 1px;
+    left: 10%;
+}
+.eleven {
+    height: 0.8px;
+    left: 10%;
+}
+.twelve {
+    height: 0.6px;
+    left: 10%;
+}
+.thirteen {
+    height: 0.4px;
+    left: 10%;
 }
