@@ -92,9 +92,7 @@ body {
 }
 
 .companies div {
-    
     display: inline;
-    font-size: 25px;
     padding: 5px;
     font-size: 20px;
     color: white;
@@ -274,4 +272,115 @@ body {
 .thirteen {
     height: 0.4px;
     left: 10%;
+}
+
+@media only screen and (max-width: 800px) {
+    .left {
+        width: 36%;
+    }
+    .intro {
+        width: 200px;
+        right: 60px;
+        font-size: 11px;
+    }
+    .name {
+        font-family: 'Montagu Slab', serif, sans-serif;
+        position: sticky;
+        top: 40%;
+        left: 5px;
+        font-size: 20px;
+        width: 100px;
+        margin-left: 15px;
+        font-weight: 900;
+    }
+    .divider {
+        width: 40px;
+        background-color: white;
+        position: absolute;
+        z-index: 2;
+        right:65%;
+    }
+    .heading {
+        margin-left: 15px;
+        text-align: center;
+        width: 150px;
+        height: 165px;
+        color: black;
+        transform: rotate(-90deg);
+        font-size: 20px;
+    }
+    .slist {
+        position:relative;
+        right: 0px;
+        bottom: 0px;
+    }
+    .techs {
+        height: 40px;
+        width: 200px;
+    }
+
+    .ebod {
+        position: absolute;
+        width: 250px;
+        height: 40vh;
+        right: 20px;
+        font-size: 11px;
+    }
+    
+    .ebod li {
+        padding: 2px;
+    }
+    
+    .companies div {
+        display: inline;
+        padding: 0.3px;
+        font-size: 14px;
+    }
+    .chead {
+        font-size: 17px;
+        padding-left: 20px;
+    }
+
+    .time {
+        font-size: 14px;
+        padding-left: 20px;
+    }
+    .outer{
+        width: 0.4px;
+        height: 10px;
+    }
+    
+    .middle {
+        width: 0px;
+        height: 10px;
+    }
+    
+    .center {
+        width: 0px;
+        height: 10px;
+    }
+   
+    .companies {
+        padding-bottom: 35px;
+    }
+
+    .bars > div {
+        margin-bottom: -5px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .bars {
+        margin-right: 3px;
+    }
+
+    .exper {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 10px;
+        text-align: center;
+        width: 200px;
+        height: 210px;
+        font-size: 23px;
+    }
 }
