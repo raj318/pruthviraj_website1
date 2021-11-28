@@ -274,9 +274,46 @@ body {
     left: 10%;
 }
 
-@media only screen and (max-width: 800px) {
+img {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.facebook, .whatsapp, .skype, .linkedin, .insta {
+    position: sticky;
+}
+
+.facebook {
+    top: 28%;
+}
+.whatsapp{
+    top: 38%;
+}
+.skype {
+    top: 48%;
+}
+.linkedin {
+    top: 58%;
+}
+.insta {
+    top: 68%;
+}
+
+.icons {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    color: white;
+    height: 200vh;
+}
+
+
+@media only screen and (max-width: 410px) {
     .left {
-        width: 36%;
+        width: 35%;
     }
     .intro {
         width: 200px;
@@ -290,7 +327,7 @@ body {
         left: 5px;
         font-size: 20px;
         width: 100px;
-        margin-left: 15px;
+        margin-left: 2px;
         font-weight: 900;
     }
     .divider {
