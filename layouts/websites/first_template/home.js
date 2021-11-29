@@ -1,5 +1,6 @@
 
 const idlist = ['cione', 'citwo', 'cithree'];
+var page = 1;
 
 function setcompany(id) {
 
@@ -24,6 +25,41 @@ function setcompany(id) {
 
 }
 
+var lastScrollTop = 0;
+
+//window.addEventListener("wheel", scroll(), false);
+window.addEventListener("wheel", function scroll(e){ // or window.addEventListener("scroll"....
+   var oldVal = parseInt(document.getElementById("body").style.transform.replace("translateY(","").replace("px)",""))
+
+   var variation = parseInt(e.deltaY);
+
+   var value =   oldVal - variation;
+    //console.log(value);
+   if (value  > 5 && page ==2 ) {
+       page = 1;
+       document.getElementById('pagename').innerHTML = "ABOUT ME";
+       document.getElementById("temp").innerHTML = document.getElementById("int").innerHTML;
+   }else if (value < -5 && page ==1 ){
+       page = 2;
+       document.getElementById('pagename').innerHTML = "EXPERIENCE";
+       document.getElementById("temp").innerHTML = document.getElementById("experi").innerHTML;
+       
+   }
+    lastScrollTop = value;
+
+}, false);
+
+function set_content(page){
+    if (page ==1 ){
+        document.getElementById('pagename').innerHTML = "ABOUT ME";
+        document.getElementById("temp").innerHTML = document.getElementById("int").innerHTML;
+    }else if (page == 2){
+        document.getElementById('pagename').innerHTML = "EXPERIENCE";
+        document.getElementById("temp").innerHTML = document.getElementById("experi").innerHTML;
+    }
+}
+
 function setfirst() {
+    set_content(1);
     setcompany('cione');
 }
