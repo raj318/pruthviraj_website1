@@ -53,7 +53,7 @@ function move_bars(){
         var element = document.getElementById(nid);
         top_pix = parseFloat(element.style.top.replace("px", ""));
         height_pix = parseFloat(element.style.height.replace("px", ""));
-        if (top_pix > 0 ){
+        if (top_pix > -20 ){
             element.style.top = top_pix-20;
             element.style.height = height_pix+0.5;
         }else{
