@@ -1,0 +1,20 @@
+.divider {
+    width: 100px;
+    height: 400px;
+    border: 2px solid black;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+}
+
+
+#bar {
+    width: 100px;
+    height: 10px;
+    background-color: red;
+    position: relative;
+    top: 10px;
+    display: none;
+}

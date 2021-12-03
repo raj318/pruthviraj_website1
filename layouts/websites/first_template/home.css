@@ -6,7 +6,6 @@ body {
     overflow-x:hidden;
 }
 
-
 #experi, #int {
     display: none;
 }
@@ -171,13 +170,25 @@ body {
 }
 
 .heading {
-    margin-left: 10px;
+    margin: 10px;
     text-align: center;
     width: 200px;
     height: 185px;
     color: black;
     transform: rotate(-90deg);
     font-size: 30px;
+    overflow: hidden;
+}
+#pagename {
+    margin-top: -2px;
+}
+
+#bar {
+    width: 100px;
+    height: 10px;
+    position: relative;
+    top: 10px;
+    display: none;
 }
 
 .exper {
@@ -196,14 +207,17 @@ body {
     display: inline-block;
     background-color: white;
     width: 100%;
-    height: 35vh;
+    height: 40%;
+    margin: auto;
+    overflow: hidden;
 }
 
 .bottombars {
     display: inline-block;
     background-color: white;
     width: 100%;
-    height: 35vh;
+    height: 40%;
+    overflow: hidden;
 }
 
 .topbars > div {
@@ -228,57 +242,24 @@ body {
     background-color:black;
 }
 
-.one {
-    height: 10px;
-    left: 10%;
+.root {
+    --top: 300px;
+    --height: 10px;
 }
-.two {
-    height: 9px;
-    left: 10%;
+
+.bbar {
+    width: 20px;
+    background-color: black;
+    position: relative;
+    top: 300px;
+    left: 10px;
+    transition: top 2s, height 1s;
+    margin: 10px;
 }
-.three {
-    height: 8px;
-    left: 10%;
-}
-.four {
-    height: 7px;
-    left: 10%;
-}
-.five {
-    height: 6px;
-    left: 10%;
-}
-.six {
-    height: 5px;
-    left: 10%;
-}
-.seven {
-    height: 4px;
-    left: 10%;
-}
-.eight {
-    height: 3px;
-    left: 10%;
-}
-.nine {
-    height: 2px;
-    left: 10%;
-}
-.ten {
-    height: 1px;
-    left: 10%;
-}
-.eleven {
-    height: 0.8px;
-    left: 10%;
-}
-.twelve {
-    height: 0.6px;
-    left: 10%;
-}
-.thirteen {
-    height: 0.4px;
-    left: 10%;
+
+.topbars:hover .bbar {
+    height: 0px;
+    top: 20px;
 }
 
 img {
@@ -315,113 +296,4 @@ img {
     top: 0;
     color: white;
     height: 100vh;
-}
-
-
-@media only screen and (max-width: 410px) {
-    .left {
-        width: 35%;
-    }
-    .intro {
-        width: 200px;
-        right: 60px;
-        font-size: 11px;
-    }
-    .name {
-        font-family: 'Montagu Slab', serif, sans-serif;
-        position: sticky;
-        top: 40%;
-        left: 5px;
-        font-size: 20px;
-        width: 100px;
-        margin-left: 2px;
-        font-weight: 900;
-    }
-    .divider {
-        width: 40px;
-        background-color: white;
-        position: absolute;
-        z-index: 2;
-        right:65%;
-    }
-    .heading {
-        margin-left: 15px;
-        text-align: center;
-        width: 150px;
-        height: 165px;
-        color: black;
-        transform: rotate(-90deg);
-        font-size: 20px;
-    }
-    .slist {
-        position:relative;
-        right: 0px;
-        bottom: 0px;
-    }
-    .techs {
-        height: 40px;
-        width: 200px;
-    }
-
-    .ebod {
-        position: absolute;
-        width: 250px;
-        height: 40vh;
-        right: 20px;
-        font-size: 11px;
-    }
-    
-    .ebod li {
-        padding: 2px;
-    }
-    
-    .companies div {
-        display: inline;
-        padding: 0.3px;
-        font-size: 14px;
-    }
-    .chead {
-        font-size: 17px;
-        padding-left: 20px;
-    }
-
-    .time {
-        font-size: 14px;
-        padding-left: 20px;
-    }
-    .outer{
-        width: 0.4px;
-        height: 10px;
-    }
-    
-    .middle {
-        width: 0px;
-        height: 10px;
-    }
-    
-    .center {
-        width: 0px;
-        height: 10px;
-    }
-   
-    .companies {
-        padding-bottom: 35px;
-    }
-
-    .bars > div {
-        margin-bottom: -5px;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-
-    .bars {
-        margin-right: 3px;
-    }
-
-    .exper {
-        margin-left: 20px;
-        width: 200px;
-        height: 230px;
-        font-size: 23px;
-    }
 }

@@ -35,7 +35,7 @@ window.addEventListener("wheel", function scroll(e){ // or window.addEventListen
 
    var value =   oldVal - variation;
     //console.log(value);
-   if (value  > 5 && page ==2 ) {
+   if (value  > 5 && page ==2 ){
        page = 1;
        document.getElementById('pagename').innerHTML = "ABOUT ME";
        document.getElementById("temp").innerHTML = document.getElementById("int").innerHTML;
@@ -59,7 +59,118 @@ function set_content(page){
     }
 }
 
+
+function topstarter() {
+    count = 1;
+    base_height = 1;
+    base_width = 1;
+    for(let i = 0;i<16;i++){
+        var ele = document.getElementById('bar');
+        var clone = ele.cloneNode(true);
+
+        clone.style.top =  20*i;
+        clone.id = "tbar"+ count;
+        clone.style.position= "relative";
+        clone.style.width = "40px";
+        clone.style.height = base_height + 0.5*i;
+        clone.style.transition = "0.5s";
+        clone.style.margin = "auto 15px";
+        clone.style.backgroundColor = "black";
+
+        document.getElementById('topbar').appendChild(clone);
+        count += 1
+    }
+    var run_every_sec = setInterval(move_top_bars,700);
+}
+
+function get_bar_element(index){
+    var ele = document.getElementById('bar');
+    var clone = ele.cloneNode(true);
+    
+    clone.style.top =  20*index;
+    clone.style.position= "relative";
+    clone.style.width = "40px";
+    clone.style.height = "10px";
+    clone.style.transition = "0.5s";
+    clone.style.margin = "auto 15px";
+    clone.style.top = "300px";
+    clone.style.backgroundColor = "black";
+
+    return clone;
+}
+
+function move_top_bars(){
+    for(let i = 1;i<17;i++){
+        nid = "tbar";
+        nid += i;
+        console.log("nid = "+ nid);
+        var element = document.getElementById(nid);
+        top_pix = parseFloat(element.style.top.replace("px", ""));
+        height_pix = parseFloat(element.style.height.replace("px", ""));
+        if (top_pix > 0 ){
+            element.style.top = top_pix-20;
+            element.style.height = height_pix-0.5;
+
+        }else{
+            element.remove();
+            new_ele = get_bar_element(i);
+            new_ele.id = nid;
+            new_ele.style.top = "300px";
+            new_ele.style.height = "10px";
+            document.getElementById('topbar').appendChild(new_ele);
+        }
+    }
+}
+
+
+function bottomstarter() {
+    count = 1;
+    base_height = 10;
+    base_width = 1;
+    for(let i = 0;i<16;i++){
+        var ele = document.getElementById('bar');
+        var clone = ele.cloneNode(true);
+
+        clone.style.top =  20*i;
+
+        clone.id = "bbar"+ count;
+        clone.style.position= "relative";
+        clone.style.width = "40px";
+        clone.style.height = base_height - 0.5*i;
+        clone.style.transition = "0.5s";
+        clone.style.margin = "auto 15px";
+        clone.style.backgroundColor = "black";
+
+        document.getElementById('bottombar').appendChild(clone);
+        count += 1
+    }
+    var run_every_sec = setInterval(move_bottom_bars,700);
+}
+
+function move_bottom_bars(){
+    for(let i = 16;i>0;i--){
+        nid = "bbar";
+        nid += i;
+        var element = document.getElementById(nid);
+        top_pix = parseFloat(element.style.top.replace("px", ""));
+        height_pix = parseFloat(element.style.height.replace("px", ""));
+        if (top_pix > 0){
+            element.style.top = top_pix-20;
+            element.style.height = height_pix+0.5;
+        }else{
+            element.remove();
+            new_ele = get_bar_element(i);
+            new_ele.id = nid;
+            new_ele.style.top = "300px";
+            new_ele.style.height = "1.5px";
+            document.getElementById('bottombar').appendChild(new_ele);
+        }
+    }
+}
+
 function setfirst() {
     set_content(1);
     setcompany('cione');
+    topstarter();
+    bottomstarter();
 }
