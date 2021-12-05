@@ -79,7 +79,7 @@ function topstarter() {
         clone.style.position= "relative";
         clone.style.width = "40px";
         clone.style.height = base_height + 0.5*i;
-        clone.style.transition = "0.1s";
+        clone.style.transition = "0.05s";
         clone.style.margin = "auto 15px";
         clone.style.backgroundColor = "black";
 
@@ -97,7 +97,7 @@ function get_bar_element(index){
     clone.style.position= "relative";
     clone.style.width = "40px";
     clone.style.height = "10px";
-    clone.style.transition = "0.1s";
+    clone.style.transition = "0.05s";
     clone.style.margin = "auto 15px";
     clone.style.top = "300px";
     clone.style.backgroundColor = "black";
@@ -158,7 +158,7 @@ function bottomstarter() {
         clone.style.position= "relative";
         clone.style.width = "40px";
         clone.style.height = base_height - 0.5*i;
-        clone.style.transition = "0.1s";
+        clone.style.transition = "0.05s";
         clone.style.margin = "auto 15px";
         clone.style.backgroundColor = "black";
 
