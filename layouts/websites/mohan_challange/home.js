@@ -85,7 +85,7 @@ function drawcurve(x, y){
 function drawcurveb(x, y, x2, y2){
     ctx.beginPath();
     ctx.moveTo(400, 1000);
-    console.log(x, y, x2, y2);
+    //console.log(x, y, x2, y2);
     ctx.bezierCurveTo(x, y, x2, y2, 550, 1000);
     //ctx.quadraticCurveTo(y+220, x+380, 300, 600);
     //ctx.quadraticCurveTo(50, 120, 30, 125);
