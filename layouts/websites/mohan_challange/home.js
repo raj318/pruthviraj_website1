@@ -46,7 +46,7 @@ animate();
 function animate(){
     requestAnimationFrame(animate);
     ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);        
-    //drawcurve(prev_x, prev_y);
+    drawcurve(prev_x2, prev_y2);
     drawcurveb(prev_x, prev_y, prev_x2, prev_y2);
     if (prev_y > 25 || prev_y < 0){
         speedy = -speedy;
@@ -69,8 +69,8 @@ function animate(){
 
 function drawcurve(x, y){
     ctx.beginPath();
-    ctx.moveTo(80, 600);
-    ctx.quadraticCurveTo(x, y, 220, 400);
+    ctx.moveTo(80, 800);
+    ctx.quadraticCurveTo(y-400, x-900, 220, 800);
     //ctx.quadraticCurveTo(y+220, x+380, 300, 600);
     //ctx.quadraticCurveTo(50, 120, 30, 125);
     //ctx.quadraticCurveTo(60, 120, 65, 100);
