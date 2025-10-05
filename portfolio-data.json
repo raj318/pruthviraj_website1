@@ -1,0 +1,210 @@
+{
+  "personal": {
+    "fullName": "Kudith Pruthvi Raj",
+    "firstName": "Pruthvi",
+    "dateOfBirth": "July 6, 1992",
+    "birthplace": "Vengalarajukandriga, Andhra Pradesh, India",
+    "email": "pruthvi318@gmail.com",
+    "tagline": "Web Developer • Designer • Creator"
+  },
+  "introduction": {
+    "text": "Welcome to my digital storybook. I'm born on July 6th, 1992, in the village of Vengalarajukandriga, Andhra Pradesh, India. This is the story of my journey through the world of web development and design.",
+    "description": "Every great story has a beginning, and mine started in a small village in India. From there, my curiosity about technology and how things work grew into a passion for creating beautiful, functional digital experiences.",
+    "callToAction": "Turn the page to discover my educational journey, skills, projects, and the adventures that have shaped my path as a developer."
+  },
+  "about": {
+    "earlyLife": "Born in Vengalarajukandriga, a village in Andhra Pradesh, India, my journey began in humble surroundings. Growing up in a village taught me the values of hard work, perseverance, and the importance of education.",
+    "journey": "My journey in web development has been one of continuous learning and growth. From writing my first line of HTML to building complex web applications, every step has been shaped by my educational background and passion for technology."
+  },
+  "education": {
+    "schools": [
+      {
+        "name": "Veena Vani Vidhyala",
+        "location": "Pileru, Andhra Pradesh",
+        "icon": "📚"
+      },
+      {
+        "name": "Vidhyanikethan School",
+        "location": "Pileru, Andhra Pradesh",
+        "icon": "📚"
+      },
+      {
+        "name": "Government High School",
+        "location": "Andhra Pradesh",
+        "icon": "📚"
+      },
+      {
+        "name": "Sri Venkateswara Children's High School",
+        "location": "Tirupati, Andhra Pradesh",
+        "icon": "📚"
+      }
+    ],
+    "intermediate": {
+      "name": "Narayana Junior College",
+      "description": "Intermediate Studies (11th & 12th)",
+      "icon": "📖"
+    },
+    "college": {
+      "name": "Sri Venkateswara Engineering College",
+      "degree": "Bachelor's Degree in Engineering",
+      "icon": "🎓",
+      "highlight": true
+    }
+  },
+  "workExperience": [
+    {
+      "company": "Synopsys",
+      "duration": "3.5 Years",
+      "location": "Hyderabad, India",
+      "description": "Started my professional journey at Synopsys, a leading company in electronic design automation. Here I built strong foundations in software development and engineering practices.",
+      "isCurrent": false
+    },
+    {
+      "company": "FactSet",
+      "duration": "3 Years",
+      "location": "Financial Technology",
+      "description": "Continued my growth at FactSet, working on financial data and analytics platforms. Gained valuable experience in building scalable solutions for the financial services industry.",
+      "isCurrent": false
+    },
+    {
+      "company": "NVIDIA",
+      "duration": "4 Years",
+      "location": "Leading Graphics & AI Technology",
+      "description": "Currently working at NVIDIA, at the forefront of GPU computing and artificial intelligence. Contributing to cutting-edge technology that's shaping the future of computing and AI.",
+      "isCurrent": true
+    }
+  ],
+  "skills": {
+    "frontend": [
+      { "name": "HTML5", "level": 90 },
+      { "name": "CSS3 / SASS", "level": 85 },
+      { "name": "JavaScript", "level": 80 },
+      { "name": "React / Vue", "level": 75 }
+    ],
+    "tools": [
+      "Git",
+      "VS Code",
+      "Figma",
+      "Bootstrap",
+      "Tailwind",
+      "Node.js",
+      "Responsive Design",
+      "UI/UX"
+    ]
+  },
+  "projects": [
+    {
+      "title": "Portfolio Website",
+      "icon": "🌐",
+      "description": "A modern, responsive portfolio website featuring smooth animations, clean design, and optimal performance. Built with vanilla JavaScript and CSS for maximum efficiency.",
+      "technologies": ["HTML5", "CSS3", "JavaScript"],
+      "demoLink": "#",
+      "sourceLink": "#"
+    },
+    {
+      "title": "Interactive Dashboard",
+      "icon": "📊",
+      "description": "A data visualization dashboard with real-time updates, interactive charts, and responsive design. Features complex state management and API integration.",
+      "technologies": ["React", "D3.js", "REST API"],
+      "demoLink": "#",
+      "sourceLink": "#"
+    },
+    {
+      "title": "E-commerce Platform",
+      "icon": "🛍️",
+      "description": "A full-featured e-commerce platform with shopping cart, checkout flow, payment integration, and admin dashboard. Secure, scalable, and user-friendly.",
+      "technologies": ["Vue.js", "Node.js", "MongoDB"],
+      "demoLink": "#",
+      "sourceLink": "#"
+    }
+  ],
+  "interests": [
+    {
+      "title": "Web Technologies",
+      "icon": "💻",
+      "description": "Passionate about exploring new web frameworks, libraries, and best practices in modern web development."
+    },
+    {
+      "title": "UI/UX Design",
+      "icon": "🎨",
+      "description": "Love creating beautiful, intuitive user interfaces that provide excellent user experiences."
+    },
+    {
+      "title": "AI & Machine Learning",
+      "icon": "🤖",
+      "description": "Interested in the intersection of web development and AI, exploring how AI can enhance web applications."
+    },
+    {
+      "title": "Open Source",
+      "icon": "🌟",
+      "description": "Contributing to open source projects and learning from the developer community."
+    }
+  ],
+  "hobbies": [
+    {
+      "name": "Reading Tech Blogs",
+      "icon": "📖",
+      "description": "Staying updated with the latest trends and technologies in the tech world."
+    },
+    {
+      "name": "Coding Side Projects",
+      "icon": "⌨️",
+      "description": "Building personal projects to learn new skills and experiment with new technologies."
+    },
+    {
+      "name": "Photography",
+      "icon": "📷",
+      "description": "Capturing moments and exploring creative perspectives through the lens."
+    },
+    {
+      "name": "Music",
+      "icon": "🎵",
+      "description": "Listening to music while coding and relaxing after a productive day."
+    }
+  ],
+  "contact": {
+    "email": {
+      "icon": "📧",
+      "title": "Email",
+      "value": "pruthvi318@gmail.com",
+      "link": "mailto:pruthvi318@gmail.com"
+    },
+    "github": {
+      "icon": "💻",
+      "title": "GitHub",
+      "value": "github.com/yourusername",
+      "link": "https://github.com/yourusername"
+    },
+    "linkedin": {
+      "icon": "💼",
+      "title": "LinkedIn",
+      "value": "linkedin.com/in/yourprofile",
+      "link": "https://linkedin.com/in/yourprofile"
+    },
+    "twitter": {
+      "icon": "🐦",
+      "title": "Twitter",
+      "value": "@yourusername",
+      "link": "https://twitter.com/yourusername"
+    }
+  },
+  "quotes": [
+    {
+      "text": "The only way to do great work is to love what you do.",
+      "author": "Steve Jobs"
+    },
+    {
+      "text": "Education is the most powerful weapon which you can use to change the world.",
+      "author": "Nelson Mandela"
+    },
+    {
+      "text": "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+      "author": "Winston Churchill"
+    },
+    {
+      "text": "The best way to predict the future is to create it.",
+      "author": "Peter Drucker"
+    }
+  ]
+}
+

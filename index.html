@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - My Story</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main Story Book Container -->
+    <div class="storybook" id="storybook">
+        <!-- Pages will be dynamically generated here -->
+    </div>
+
+    <!-- Navigation Controls -->
+    <div class="nav-controls">
+        <button class="nav-button prev-button" id="prevBtn" aria-label="Previous Page">
+            <span class="nav-arrow">←</span>
+            <span class="nav-text">Previous</span>
+        </button>
+        
+        <div class="page-counter">
+            <span id="currentPage">1</span>
+            <span class="counter-separator">/</span>
+            <span id="totalPages">1</span>
+        </div>
+        
+        <button class="nav-button next-button" id="nextBtn" aria-label="Next Page">
+            <span class="nav-text">Next</span>
+            <span class="nav-arrow">→</span>
+        </button>
+    </div>
+
+    <!-- Load data and build pages -->
+    <script src="portfolio-builder.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
